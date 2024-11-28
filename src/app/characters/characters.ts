@@ -1,6 +1,6 @@
 export interface Characters {
-    nombre: string,
-    KI: number,
-    raza: string,
-    img: string
+    name: string,
+    ki: number,
+    race: string,
+    image: string
 }
