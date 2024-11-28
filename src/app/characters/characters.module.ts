@@ -4,6 +4,7 @@ import { DashboardComponent } from './characters-dashboard/dashboard.component';
 import { CardsComponent } from './cards-characters/cards.component';
 import { CharactersTransformationComponent } from './cards-tranformations/characters-transformation.component';
 import { TransformationsDashboardComponent } from './transformations-dashboard/transformations-dashboard.component';
+import { PlanetsDashboardComponent } from './planets-dashboard/planets-dashboard.component';
 
 
 
@@ -12,7 +13,8 @@ import { TransformationsDashboardComponent } from './transformations-dashboard/t
     DashboardComponent,
     CardsComponent,
     CharactersTransformationComponent,
-    TransformationsDashboardComponent
+    TransformationsDashboardComponent,
+    PlanetsDashboardComponent
   ],
   imports: [
     CommonModule

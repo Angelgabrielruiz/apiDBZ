@@ -1,0 +1,11 @@
+<div class="planets-dashboard">
+    <h1>Planetas</h1>
+    <div class="cards">
+      <div class="card" *ngFor="let planet of planets">
+        <img [src]="planet.image" alt="{{ planet.name }}" />
+        <p><strong>Nombre:</strong> {{ planet.name }}</p>
+        <p><strong>Descripción:</strong> {{ planet.description }}</p>
+      </div>
+    </div>
+  </div>
+  
