@@ -1,3 +1,15 @@
 <div class="dashboard">
     <h1>Personajes</h1>
-</div>
+  
+    <div class="cards">
+      <div class="card" *ngFor="let character of characters">
+        <div class="img">
+          <img [src]="character.image" alt="{{ character.name }}" class="character-image" />
+        </div>
+        <p><strong>Nombre:</strong> {{ character.name }}</p>
+        <p><strong>Ki:</strong> {{ character.ki }}</p>
+        <p><strong>Raza:</strong> {{ character.race }}</p>
+      </div>
+    </div>
+  </div>
+  

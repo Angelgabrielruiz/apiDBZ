@@ -1,9 +1,50 @@
-.dashboard{
-    width: 100%;
-
-}
-
-h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.dashboard {
     text-align: center;
-}
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 25%;
+    background-color: rgb(101, 186, 217);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card img.character-image {
+    width: 100%;
+    height: 50%;
+    height: auto;
+    background-color: brown;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  img{
+    width: 100%;
+  }
+
+  .card p {
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 90%;
+    }
+  }
+  
