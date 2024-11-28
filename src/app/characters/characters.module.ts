@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CardsComponent } from './cards/cards.component';
 import { CharactersTransformationComponent } from './characters-transformation/characters-transformation.component';
+import { TransformationsDashboardComponent } from './transformations-dashboard/transformations-dashboard.component';
 
 
 
@@ -10,7 +11,8 @@ import { CharactersTransformationComponent } from './characters-transformation/c
   declarations: [
     DashboardComponent,
     CardsComponent,
-    CharactersTransformationComponent
+    CharactersTransformationComponent,
+    TransformationsDashboardComponent
   ],
   imports: [
     CommonModule
