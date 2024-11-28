@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CharactersService } from '../characters.service';
+import { Transformations } from '../transformations';
 
 @Component({
   selector: 'app-transformations-dashboard',
   templateUrl: './transformations-dashboard.component.html',
-  styleUrl: './transformations-dashboard.component.css'
+  styleUrls: ['./transformations-dashboard.component.css']
 })
-export class TransformationsDashboardComponent {
+export class TransformationsDashboardComponent implements OnInit {
+  transformations: Transformations[] = [];
 
+  constructor(private charactersService: CharactersService) {}
+
+  ngOnInit(): void {
+    this.charactersService.getTransformations().subscribe((data) => {
+      this.transformations = data;
+    });
+  }
 }

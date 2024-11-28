@@ -16,6 +16,9 @@ import { TransformationsDashboardComponent } from './transformations-dashboard/t
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    CharactersTransformationComponent
   ]
 })
 export class CharactersModule { }

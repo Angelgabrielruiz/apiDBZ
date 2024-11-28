@@ -1,1 +1,6 @@
-<p>transformations-dashboard works!</p>
+<div *ngFor="let transformation of transformations">
+    <h3>{{ transformation.name }}</h3>
+    <img [src]="transformation.image" alt="{{ transformation.name }}" width="200" />
+    <p>Ki: {{ transformation.ki }}</p>
+  </div>
+  
