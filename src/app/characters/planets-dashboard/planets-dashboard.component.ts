@@ -16,8 +16,8 @@ export class PlanetsDashboardComponent implements OnInit {
   }
 
   getPlanets(): void {
-    this.charactersService.getPlanets().subscribe(data => {
-      this.planets = data; 
+    this.charactersService.getPlanets().subscribe((response: any) => {
+      this.planets = response.items; 
     });
   }
 }
