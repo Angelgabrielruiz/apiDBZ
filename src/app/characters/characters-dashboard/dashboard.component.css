@@ -20,13 +20,13 @@
   }
   
   .card img.character-image {
-    width: 100%;
-    height: 50%;
-    height: auto;
-    background-color: brown;
+    width: 100%; 
+    height: 800px; 
+    object-fit: cover; 
     border-radius: 8px;
     margin-bottom: 10px;
   }
+  
   
   img{
     width: 100%;
